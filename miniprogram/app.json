@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/home/home",
+    "pages/comment/comment",
+    "pages/profile/profile",
+    "pages/map/map",
+    "pages/mymovie/mymovie"
+  ],
+  "window": {
+    "backgroundColor": "#27a",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#27a",
+    "navigationBarTitleText": "每日热影",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/01.png",
+        "selectedIconPath": "images/01_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/02.png",
+        "selectedIconPath": "images/02_active.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/03.png",
+        "selectedIconPath": "images/03_active.png"
+      },
+      {
+        "pagePath": "pages/mymovie/mymovie",
+        "text": "我的",
+        "iconPath": "images/04.png",
+        "selectedIconPath": "images/04_active.png"
+      }
+    ]
+  }
+}
