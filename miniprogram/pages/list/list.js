@@ -16,7 +16,13 @@ Page({
     // console.log(options)
     var that = this;
     var type=options.type;
+    that.setData({
+      type:type
+    });
     var title="";
+    wx.showLoading({
+      title: '正在加载中...',
+    });
     if(type=="movie"){
       // 请求电影
       network.getMovieList({
@@ -24,6 +30,7 @@ Page({
           that.setData({
             items: items
           });
+          wx.hideLoading();
         },
         count:1000
       });
@@ -35,6 +42,7 @@ Page({
           that.setData({
             items: items
           });
+          wx.hideLoading();
         },
         count: 1000
       });
@@ -46,6 +54,7 @@ Page({
           that.setData({
             items: items
           });
+          wx.hideLoading();
         },
         count: 1000
       });
@@ -99,7 +108,7 @@ Page({
   },
 
   /**
-   * 用户点击右上角分享
+   * 用户点击右上角分享 byqw
    */
   onShareAppMessage: function () {
 

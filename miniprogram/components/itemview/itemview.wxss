@@ -1,4 +1,4 @@
-/* components/itemview/itemview.wxss */
+/* components/itemview/itemview.wxss byqw*/
  .item-navigator{
   width: 200rpx;
   margin-right: 20rpx;
@@ -23,4 +23,5 @@
   margin-top: 20rpx;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-bottom: 20rpx;
 }

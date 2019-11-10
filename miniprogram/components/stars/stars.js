@@ -1,4 +1,4 @@
-// components/stars/stars.js
+// components/stars/stars.js byqw
 Component({
   /**
    * 组件的属性列表
@@ -19,6 +19,10 @@ Component({
     fontcolor:{
       type:String,
       value:"#ccc"
+    },
+    istext:{
+      type:Boolean,
+      value:true
     }
   },
 

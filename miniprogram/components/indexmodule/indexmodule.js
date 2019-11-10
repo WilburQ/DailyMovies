@@ -1,4 +1,4 @@
-// components/indexmodule/indexmodule.js
+// components/indexmodule/indexmodule.js byqw
 Component({
   /**
    * 组件的属性列表
@@ -15,6 +15,10 @@ Component({
     items: {
       type: Array,
       value: []
+    },
+    type:{
+      type:String,
+      value:""
     }
   },
 

@@ -1,4 +1,4 @@
-/* components/searchbar/searchbar.wxss */
+/* components/searchbar/searchbar.wxss byqw*/
 .searchbar{
   background-color: #27a;
   padding: 20rpx;

@@ -1,44 +1,42 @@
-// pages/index/index.js byqw
-import{network} from "../../utils/network.js"
+// pages/comment2/comment2.js
+import {network} from "../../utils/network.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    total:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // MVC
+    // console.log(options);
     var that=this;
-    // 请求电影数据
-    network.getMovieList({
-      success:function(movies){
+    that.setData(options);
+    network.getItemComments({
+      type:options.type,
+      id:options.id,
+      start:1,
+      count:20,
+      success:function(data){
+        // console.log(data)
+        var total=data.total;
+        var comments=data.interests;
         that.setData({
-          movies:movies
-        })
+          total:total,
+          comments:comments
+        });
       }
     })
-    // 请求电视剧数据
-    network.getTVList({
-      success:function(tvs){
-        that.setData({
-          tvs:tvs
-        })
-      }
-    })
-    // 综艺数据
-    network.getShowList({
-      success:function(shows){
-        that.setData({
-          shows:shows
-        })
-      }
-    })
+  },
+
+  onItemTapEvent:function(event){
+    wx.navigateBack({
+      
+    });
   },
 
   /**
